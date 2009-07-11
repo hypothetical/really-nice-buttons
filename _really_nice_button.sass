@@ -1,0 +1,12 @@
+=really_nice_button(!image,!height,!width)
+  :display block
+  :text-indent -5000px
+  :height= !height
+  :width= !width
+  :background-repeat no-repeat
+  :background-image= url(!image)
+  :background-position 0 0
+  &:hover
+    :background-position= "0 #{-!height}"
+  &:active
+    :background-position= "0 #{-!height*2}"
